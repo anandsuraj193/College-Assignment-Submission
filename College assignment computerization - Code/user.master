@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="Stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .style1
+        {
+            width: 231px;
+        }
+    </style>
+
+</head>
+<body bgcolor="#4ca0dc">
+    <form id="form1" runat="server">
+    <div>
+     <table width="1350px" bgcolor="#4ca0dc" 
+            style="border: medium groove #333333; height: 81px;">
+            <tr>
+               <td align="center" 
+                    style="font-weight: bold; font-family: georgia; font-size: large">
+             COLLEGE ASSIGNMENT COMPUTERIZATION
+               </td>
+            </tr>
+        </table>
+    <table style="width: 922px; height: 418px">
+        <tr>
+            <td valign="top" class="style1">
+                <asp:Panel ID="Panel1" runat="server" Height="206px" Width="231px">
+               
+                <fieldset style="height: 186px; width: 208px">
+                    <legend>
+                    Menus
+                    </legend>
+                    <table style="width: 189px; height: 154px;">
+                     <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/emphome.aspx" 
+                                    ForeColor="#000066">Home</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink3" runat="server" 
+                                    ForeColor="#000066" NavigateUrl="~/viewreceiveddet.aspx">View Received Assignment Details from Staff</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/sendfile.aspx" 
+                                    ForeColor="#000066">Upload Assignment</asp:HyperLink>
+                            </td>
+                        </tr>
+                       <%--  <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink4" runat="server" 
+                                    NavigateUrl="~/viewuserrequest.aspx" ForeColor="#000066">Cloud Server Request</asp:HyperLink>
+                            </td>
+                        </tr>--%>
+                      
+                         <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/index.aspx" 
+                                    ForeColor="#000066">Log Out</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                 </asp:Panel>
+                <br />
+               
+            </td>
+            <td valign="top" bgcolor="White">
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>     
+            </td>
+        </tr>
+    </table>
+       
+    </div>
+    </form>
+</body>
+</html>
